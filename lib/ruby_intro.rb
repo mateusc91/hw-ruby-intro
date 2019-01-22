@@ -3,11 +3,13 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  sum = 0
+ arr.each{|element| sum=sum+element }
+ return sum  # YOUR CODE HERE
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+ arr.empty? ? 0 : arr.sort.last(2).reduce(:+) # YOUR CODE HERE
 end
 
 def sum_to_n? arr, n
