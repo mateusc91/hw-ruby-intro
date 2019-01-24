@@ -9,11 +9,14 @@ def sum arr
 end
 
 def max_2_sum arr
- arr.empty? ? 0 : arr.sort.last(2).reduce(:+) # YOUR CODE HERE
+ return 0 if arr.empty? 
+  arr.sort.last(2).reduce(:+) # YOUR CODE HERE
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  
+  return false if arr.empty? && n.zero?
+  arr.combination(2).any? {|a, b| a + b == n }# YOUR CODE HERE
 end
 
 # Part 2
