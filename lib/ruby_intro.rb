@@ -37,5 +37,10 @@ end
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
+
+  attr_accessor :isbn
+  attr_accessor :price
+  
+  
+  # YOUR CODE HERE
 end
